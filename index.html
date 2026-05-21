@@ -1,0 +1,317 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Sayangku Cantikku Manisku ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #fff1f5, #ffe4e6);
+      overflow-x:hidden;
+      color:#5b2d42;
+      position:relative;
+    }
+
+    /* Falling Hearts */
+    .heart{
+      position:fixed;
+      top:-10px;
+      color:#ff4d88;
+      animation:fall linear infinite;
+      z-index:1;
+      opacity:0.7;
+    }
+
+    @keyframes fall{
+      to{
+        transform:translateY(110vh);
+      }
+    }
+
+    .container{
+      max-width:1000px;
+      margin:auto;
+      padding:30px 20px 60px;
+      position:relative;
+      z-index:2;
+    }
+
+    .hero{
+      text-align:center;
+      padding:40px 20px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      color:#ff4d88;
+      font-family:'Patrick Hand', cursive;
+      margin-bottom:10px;
+    }
+
+    .hero p{
+      font-size:18px;
+      margin-bottom:25px;
+    }
+
+    .music-btn{
+      padding:14px 28px;
+      border:none;
+      border-radius:20px;
+      background:#ff4d88;
+      color:white;
+      font-size:16px;
+      cursor:pointer;
+      font-weight:bold;
+      box-shadow:0 5px 15px rgba(255,77,136,0.4);
+      transition:0.3s;
+    }
+
+    .music-btn:hover{
+      transform:scale(1.05);
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:38px;
+      margin:50px 0 30px;
+      font-family:'Patrick Hand', cursive;
+      color:#ff4d88;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:25px;
+      padding:15px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.12);
+      transform:rotate(-2deg);
+      transition:0.3s;
+      position:relative;
+    }
+
+    .card:nth-child(even){
+      transform:rotate(2deg);
+    }
+
+    .card:hover{
+      transform:scale(1.03);
+    }
+
+    .card img{
+      width:100%;
+      height:280px;
+      object-fit:cover;
+      border-radius:18px;
+    }
+
+    .caption{
+      text-align:center;
+      margin-top:12px;
+      font-family:'Patrick Hand', cursive;
+      font-size:24px;
+    }
+
+    .letter{
+      margin-top:60px;
+      background:white;
+      border-radius:30px;
+      padding:40px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.1);
+      line-height:1.9;
+      font-size:18px;
+      position:relative;
+    }
+
+    .letter::before{
+      content:'💌';
+      position:absolute;
+      top:-20px;
+      left:30px;
+      font-size:40px;
+    }
+
+    .timeline{
+      margin-top:60px;
+      display:flex;
+      flex-direction:column;
+      gap:20px;
+    }
+
+    .timeline-item{
+      background:white;
+      padding:20px;
+      border-radius:20px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .timeline-item h3{
+      color:#ff4d88;
+      margin-bottom:8px;
+    }
+
+    .footer-love{
+      text-align:center;
+      margin-top:60px;
+      font-size:55px;
+      animation:beat 1s infinite;
+    }
+
+    @keyframes beat{
+      0%{transform:scale(1);}
+      50%{transform:scale(1.2);}
+      100%{transform:scale(1);}
+    }
+
+    @media(max-width:600px){
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      .letter{
+        padding:25px;
+        font-size:16px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Falling Hearts -->
+  <div class="heart" style="left:10%; animation-duration:7s; font-size:22px;">❤️</div>
+  <div class="heart" style="left:25%; animation-duration:10s; font-size:18px;">💖</div>
+  <div class="heart" style="left:45%; animation-duration:8s; font-size:26px;">💕</div>
+  <div class="heart" style="left:60%; animation-duration:12s; font-size:20px;">❤️</div>
+  <div class="heart" style="left:75%; animation-duration:9s; font-size:24px;">💗</div>
+  <div class="heart" style="left:90%; animation-duration:11s; font-size:18px;">💞</div>
+
+  <div class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+      <h1>Happy Birthday Sayang ❤️</h1>
+      <p>
+        Untuk orang paling spesial di hidupku ✨
+      </p>
+
+      <button class="music-btn" onclick="document.getElementById('lagu').play()">
+        ▶ Putar Lagu Kita
+      </button>
+
+      <audio id="lagu" loop>
+        <source src="lagu.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+
+    <!-- GALLERY -->
+    <h2 class="section-title">Our Memories 📸</h2>
+
+    <div class="gallery">
+
+      <div class="card">
+        <img src="foto1.jpeg">
+        <div class="caption">First Favorite Moment ❤️</div>
+      </div>
+
+      <div class="card">
+        <img src="foto2.jpg">
+        <div class="caption">Your Smile ✨</div>
+      </div>
+
+      <div class="card">
+        <img src="foto3.jpeg">
+        <div class="caption">Always With You 💕</div>
+      </div>
+
+      <div class="card">
+        <img src="foto4.jpg">
+        <div class="caption">I Love You Forever 💌</div>
+      </div>
+
+    </div>
+
+
+    <!-- LETTER -->
+    <div class="letter">
+
+      Selamat ulang tahun ya sayangku cantikku manisku 🎂❤️<br><br>
+
+      Aku bersyukur banget karena dipertemukan sama kamu.
+      Terima kasih sudah selalu ada, selalu sabar,
+      dan selalu menjadi rumah terbaik buat aku.
+
+      <br><br>
+
+      Semoga dengan bertambahnya umur ini semua impian kamu tercapai,
+      kesehatan selalu menyertai kamu,
+      dan semoga kita bisa terus bersama yaaa 🤍
+
+      <br><br>
+
+      Jangan capek ya jadi orang baik.
+      Aku akan selalu dukung kamu dalam keadaan apapun.
+
+      <br><br>
+
+      I Love You More Than Yesterday 💖
+
+    </div>
+
+
+    <!-- TIMELINE -->
+    <h2 class="section-title">Our Story 🌸</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h3>✨ Pertama Kenal</h3>
+        <p>
+          Hari dimana semuanya dimulai dan aku tidak menyangka
+          kamu akan jadi seseorang yang paling berarti.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>💕 Pertama Kali Nonton SUCRD Bareng</h3>
+        <p>
+          Salah satu hari favorit yang selalu aku ingat, hehe.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>❤️ Hari Ini</h3>
+        <p>
+          Dan sekarang aku masih bersyukur karena masih bisa bersama kamu.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer-love">
+      ❤️
+    </div>
+
+  </div>
+
+</body>
+</html>
